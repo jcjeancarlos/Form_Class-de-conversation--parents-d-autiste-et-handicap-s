@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: url("assets/img_workshop.jpeg") no-repeat center center / cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    padding: 15px 0 35px 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(4px);
+    position: relative;
+}
+
+.marca-footer-header {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    font-size: 0.9rem;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    opacity: 0.9;
+}
+
+header h3 {
+    font-family: "Pinyon Script";
+    font-size: 2.4rem;
+    color: gold;
+    animation: glow 2.5s ease-in-out infinite;
+}
+
+/* shinig animation */
+@keyframes glow {
+    0% { text-shadow: 0 0 5px gold; }
+    50% { text-shadow: 0 0 20px red; }
+    100% { text-shadow: 0 0 5px gold; }
+}
+
+main {
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logos span img {
+    width: 60px;
+    height: auto;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+li {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.form {
+    width: 90%;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.form input,
+.form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.form button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #ffffffcc;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.content {
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.content h4 {
+    color: white;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.checklist {
+    list-style: none;
+    padding: 0;
+}
+
+.checklist li {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 6px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.checklist li::before {
+    content: "✔";
+    color: red;
+    position: absolute;
+    left: 0;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(4px);
+}
+
