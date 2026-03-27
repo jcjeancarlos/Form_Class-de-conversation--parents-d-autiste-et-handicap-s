@@ -1,4 +1,4 @@
-document.querySelector(".form").addEventListener("submit", async function(e) {
+document.querySelector(".form").addEventListener("submit", async function (e) {
     e.preventDefault();
 
     const data = {
@@ -6,7 +6,10 @@ document.querySelector(".form").addEventListener("submit", async function(e) {
         nom: document.getElementById("nom").value,
         telephone: document.getElementById("telephone").value,
         email: document.getElementById("email").value,
-        langue: document.getElementById("langue").value
+        langue: document.getElementById("langue").value,
+        situation: document.getElementById("situation").value,
+        details: document.getElementById("details").value
+
     };
 
     const response = await fetch("https://script.google.com/macros/s/AKfycby2-NqiQY2tQRCLIjZmbO9kbcIrsI2xzXGnKXWf8-5JBmzG3YYpb7SKxlr2yjiOoyyR/exec", {

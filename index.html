@@ -5,37 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/mala.ico" type="image/x-icon">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Pinyon+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
         rel="stylesheet">
 
-    <title>Brazil na Mala</title>
+    <title>Groupe de Parole - Parents</title>
 </head>
 
 <body>
 
     <header>
-        <h3>Master Liss Expert - Formation en lissage brésilien</h3>
+        <h3>Groupe de Parole - Parents d'Enfants Autistes et Handicapés</h3>
         <span class="marca-footer-header">ASBL Brazil na Mala</span>
     </header>
 
     <main>
 
         <section class="logos">
-            <span><img src="assets/BRAZIL na mala.PNG" alt="logo 1"></span>
-            <span><img src="assets/logo_pink_cosmetics.png" alt="logo 2"></span>
+            <span><img src="assets/new_logo_brazil_na_mala.png" alt="logo 1"></span>
         </section>
 
-        <section class="form-wrapper">
+        <section class="form_wrapper">
             <form class="form">
-            <ul>
-                <li>Workshpo gratuit</li>
-                <li>Frais de incription: 10 EUR</li>
-                <li>Vous serez contacté(e) pour finaliser votre inscription.</li>
-            </ul>
+
+                <ul>
+                    <li>Rencontre gratuite</li>
+                    <li>Inscription obligatoire</li>
+                    <li>Nous vous demandons de respecter la confidentialité et de ne pas partager en dehors du groupe les paroles des autres parents.</li>
+                </ul>
+
                 <label for="prenom">Prénom :</label>
                 <input type="text" id="prenom" name="prenom" required>
 
@@ -50,40 +51,43 @@
 
                 <label for="langue">Langue préférée :</label>
                 <select id="langue" name="langue" required>
-                    <option value="pt/fr">Portugais avec des notions de français</option>
                     <option value="fr">Français</option>
                     <option value="pt">Portugais</option>
+                    <option value="pt/fr">Portugais avec notions de français</option>
                 </select>
+
+                <label for="situation">Situation de votre enfant :</label>
+                <select id="situation" name="situation" required>
+                    <option value="autisme">Autisme</option>
+                    <option value="autre">Autre (précisez ci-dessous)</option>
+                </select>
+
+                <label for="details">Si “autre”, précisez :</label>
+                <textarea id="details" name="details" rows="3" placeholder="Écrivez ici..."></textarea>
 
                 <button type="submit">Envoyer</button>
             </form>
         </section>
 
         <section class="content">
-            <h4>CE QUI SERA ENSEIGNÉ</h4>
+            <h4>OBJECTIFS DU GROUPE</h4>
 
             <ul class="checklist">
-                <li>Évaluation complète du cheveu</li>
-                <li>Types de cheveux et adaptation du lissage</li>
-                <li>Choix correct des produits</li>
-                <li>Étape par étape de l'application</li>
-                <li>Technique correcte du fer à lisser</li>
-                <li>Contrôle de la température</li>
-                <li>Éviter les erreurs et dommages chimiques</li>
-                <li>Finition avec brillance et mouvement naturel</li>
-                <li>Conseils de durabilité</li>
-                <li>Soins post-procédure</li>
-                <li>Accueil professionnel de la cliente</li>
-                <li>Comment se démarquer et facturer comme spécialiste</li>
+                <li>Écoute bienveillante</li>
+                <li>Partage d'expériences entre parents</li>
+                <li>Compréhension des besoins spécifiques</li>
+                <li>Stratégies d'accompagnement</li>
+                <li>Gestion émotionnelle</li>
+                <li>Ressources et orientation</li>
             </ul>
         </section>
 
         <footer class="footer">
-            <p>ASBL Brazil na Mala — Tous droits réservés © 2026</p>
+            <p>ASBL Brazil na Mala - Tous droits réservés © 2026</p>
         </footer>
-
 
     </main>
 
     <script src="script.js"></script>
 </body>
+</html>
