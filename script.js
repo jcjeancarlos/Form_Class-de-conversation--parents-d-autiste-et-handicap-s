@@ -12,7 +12,7 @@ document.querySelector(".form").addEventListener("submit", async function (e) {
 
     };
 
-    const response = await fetch("https://script.google.com/macros/s/AKfycby2-NqiQY2tQRCLIjZmbO9kbcIrsI2xzXGnKXWf8-5JBmzG3YYpb7SKxlr2yjiOoyyR/exec", {
+    const response = await fetch("https://script.google.com/macros/s/AKfycbxb3I8Yzr656gQbLx8_0tpMYAwmkrqW7vN1jjJ5r7tF4VHBPd6xbk3nPuFzp2f9liU4/exec", {
         method: "POST",
         body: JSON.stringify(data)
     });
